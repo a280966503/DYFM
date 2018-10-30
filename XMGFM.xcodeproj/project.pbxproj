@@ -22,9 +22,11 @@
 		7BF498A41DB5BCAC0051D36E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7BF498A21DB5BCAC0051D36E /* Main.storyboard */; };
 		7BF498A61DB5BCAC0051D36E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7BF498A51DB5BCAC0051D36E /* Assets.xcassets */; };
 		7BF498A91DB5BCAC0051D36E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7BF498A71DB5BCAC0051D36E /* LaunchScreen.storyboard */; };
+		E073501762BAB3E378D2EB65 /* Pods_XMGFM.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F774D1EAECF34F921E0FE083 /* Pods_XMGFM.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		1B60AD8ADF992516BA9E73B0 /* Pods-XMGFM.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-XMGFM.debug.xcconfig"; path = "Pods/Target Support Files/Pods-XMGFM/Pods-XMGFM.debug.xcconfig"; sourceTree = "<group>"; };
 		5A13786F218848A800A71788 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
 		5A137870218848A800A71788 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		7B8096951DB5D02400A2DC36 /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -52,6 +54,8 @@
 		7BF498A31DB5BCAC0051D36E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		7BF498A51DB5BCAC0051D36E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		7BF498A81DB5BCAC0051D36E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		F774D1EAECF34F921E0FE083 /* Pods_XMGFM.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_XMGFM.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		F92E1D502B8D0381ADAFAEFF /* Pods-XMGFM.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-XMGFM.release.xcconfig"; path = "Pods/Target Support Files/Pods-XMGFM/Pods-XMGFM.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -59,12 +63,21 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E073501762BAB3E378D2EB65 /* Pods_XMGFM.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		420201990E10191F89AFC148 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				F774D1EAECF34F921E0FE083 /* Pods_XMGFM.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		7B8096921DB5D02400A2DC36 /* Classes */ = {
 			isa = PBXGroup;
 			children = (
@@ -155,6 +168,8 @@
 			children = (
 				7BF498981DB5BCAC0051D36E /* XMGFM */,
 				7BF498971DB5BCAC0051D36E /* Products */,
+				8ECE20A7DF79F80F742BEA12 /* Pods */,
+				420201990E10191F89AFC148 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -195,6 +210,15 @@
 			name = Resource;
 			sourceTree = "<group>";
 		};
+		8ECE20A7DF79F80F742BEA12 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				1B60AD8ADF992516BA9E73B0 /* Pods-XMGFM.debug.xcconfig */,
+				F92E1D502B8D0381ADAFAEFF /* Pods-XMGFM.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -202,9 +226,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 7BF498AD1DB5BCAC0051D36E /* Build configuration list for PBXNativeTarget "XMGFM" */;
 			buildPhases = (
+				1E4708178BFD5ABC129B0243 /* [CP] Check Pods Manifest.lock */,
 				7BF498921DB5BCAC0051D36E /* Sources */,
 				7BF498931DB5BCAC0051D36E /* Frameworks */,
 				7BF498941DB5BCAC0051D36E /* Resources */,
+				52E3C62590C9675C64A48C63 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -262,6 +288,53 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		1E4708178BFD5ABC129B0243 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-XMGFM-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		52E3C62590C9675C64A48C63 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-XMGFM/Pods-XMGFM-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/MJExtension/MJExtension.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/MJExtension.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-XMGFM/Pods-XMGFM-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		7BF498921DB5BCAC0051D36E /* Sources */ = {
@@ -394,6 +467,7 @@
 		};
 		7BF498AE1DB5BCAC0051D36E /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1B60AD8ADF992516BA9E73B0 /* Pods-XMGFM.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
@@ -410,6 +484,7 @@
 		};
 		7BF498AF1DB5BCAC0051D36E /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = F92E1D502B8D0381ADAFAEFF /* Pods-XMGFM.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
